@@ -1,0 +1,8 @@
+configuration {
+ 	font: "UbuntuMono Nerd Font 12";
+ 	modi: "drun,window,ssh";
+}
+
+
+@theme "~/.cache/wal/colors-rofi-dark"
+@theme "~/.config/rofi/border-override"

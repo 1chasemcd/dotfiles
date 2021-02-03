@@ -1,0 +1,34 @@
+# Created by Chase McDonald for 5.8
+
+# Powerline symbols, in case I change my mind:
+#  
+#  
+#  
+#   
+#  
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.config/zsh/histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/chasemcdonald/.zshrc'
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+compinit
+# End of lines added by compinstall
+if [ $TERM = 'linux' ]; then
+	PROMPT='%F{yellow}%n%f %F{red}%2~%f %F{green}%#%f '
+
+	setopt promptsubst
+	RPROMPT='%F{yellow}Battery: $(acpi | grep -o "[0-9][0-9]%")%%f'
+else
+	(cat ~/.cache/wal/sequences & )
+	PROMPT='%F{black}%K{yellow}%n %k%f%F{yellow}%K{red} %k%f%F{black}%K{red}%2~ %k%f%F{red}%K{green} %k%f%F{black}%K{green}%# %k%f%F{green}%f '
+
+fi
+
+alias ls='ls --color=auto'

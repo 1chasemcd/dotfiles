@@ -1,0 +1,15 @@
+* {
+	border-color: @foreground;
+}
+
+#window {
+	border: 1;
+}
+
+#message {
+    border: 1px 0px 0px;
+}
+
+#listview {
+    border: 1px 0px 0px;
+}

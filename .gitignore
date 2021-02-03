@@ -1,0 +1,9 @@
+Code/
+!Code/User/settings.json
+
+dconf/
+Electron/
+QtProject.conf
+
+micro/backups
+micro/buffers
