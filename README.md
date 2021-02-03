@@ -19,7 +19,7 @@ The following packages are installed in my configuration.
 * network-manager
 * wpa_supplicant
 
-## System
+### System
 * intel-ucode
 * mesa
 * xf86-video-intel
