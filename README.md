@@ -27,7 +27,7 @@ The following packages are installed in my configuration.
 * sudo
 * zsh
 
-### Desktop
+### Display Manager, Window Manager, and Other Desktop Software
 * xorg
 * i3-gaps
 * polybar
@@ -35,18 +35,19 @@ The following packages are installed in my configuration.
 * python-pywal
 * feh
 
+### Applications
 * alacritty
 * firefox
 * micro (AUR)
 * mirage (AUR)
 * visual-studio-code-bin (AUR)
 
+### Other Utilities
 * zip
 * unzip
 * neofetch
 * acpi
 * xclip
-
 * nerd-fonts-ubuntu-mono (AUR)
 
 
