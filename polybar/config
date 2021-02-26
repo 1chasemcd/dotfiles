@@ -2,16 +2,16 @@
 background = ${xrdb:color0:#000}
 foreground = ${xrdb:color0:#fff}
 foreground-alt = ${xrdb:color7:#000}
-color1 = ${xrdb:color2:#f00}
-color2 = ${xrdb:color1:#ff0}
-color3 = ${xrdb:color3:#0f0}
-color4 = ${xrdb:color4:#00f}
-color5 = ${xrdb:color5:#f0f}
-color6 = ${xrdb:color6:#0ff}
+color1 = ${xrdb:color1:#f00}
+color2 = ${xrdb:color2:#ff0}
+color3 = ${xrdb:color4:#0f0}
+color4 = ${xrdb:color3:#00f}
+color5 = ${xrdb:color6:#f0f}
+color6 = ${xrdb:color5:#0ff}
 color8 = ${xrdb:color8:#888}
 
 [bar/bar1]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:}
 width = 100%
 height = 28
 ;offset-x = 1%
@@ -27,7 +27,7 @@ font-1 = UbuntuMono Nerd Font Mono:style=Regular:size=20;4
 font-2 = UbuntuMono Nerd Font Mono:style=Regular:size=21;4
 
 modules-left = i3 left-arrow
-modules-right =  right-arrow-1 filesystem  right-arrow-2 cpu temperature right-arrow-3 memory  right-arrow-4 wlan eth right-arrow-5 xbacklight right-arrow-6 alsa right-arrow-7 battery  right-arrow-8 date
+modules-right =  right-arrow-1 filesystem  right-arrow-2 cpu temperature right-arrow-3 memory  right-arrow-4 wlan eth right-arrow-5 xbacklight alsa right-arrow-6 battery  right-arrow-7 date
 
 ;wm-restack = i3
 
@@ -92,11 +92,6 @@ inherit = module/right-arrow-base
 content-foreground = ${colors.color1}
 content-background = ${colors.color6}
 
-[module/right-arrow-8]
-inherit = module/right-arrow-base
-content-foreground = ${colors.color2}
-content-background = ${colors.color1}
-
 ; -------------------------------------------------------------
 ; i3 workspace module
 ; -------------------------------------------------------------
@@ -151,7 +146,7 @@ label-unmounted = %{T2}%{T-} %mountpoint% not mounted
 type = internal/cpu
 interval = 5
 format-background = ${colors.color2}
-label ="%{T2}%{T-} %percentage:2%%, "
+label ="%{T2}%{T-} %percentage:2%% "
 
 [module/temperature]
 type = internal/temperature
@@ -206,7 +201,7 @@ format-disconnected =
 type = internal/xbacklight
 
 format-background = ${colors.color5}
-label = %{T2}%{T-} %percentage:2%%
+label = "%{T2}%{T-} %percentage:2%% "
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -216,11 +211,11 @@ card = intel_backlight
 [module/alsa]
 type = internal/alsa
 
-format-volume-background = ${colors.color6}
+format-volume-background = ${colors.color5}
 label-volume = %{T2}墳%{T-} %percentage%%
 
-format-muted-background = ${colors.color6}
-format-muted-foreground = ${colors.foreground-alt}
+format-muted-background = ${colors.color5}
+format-muted-foreground = ${colors.color1}
 label-muted = %{T2}婢%{T-} %percentage%%
 
 [module/battery]
@@ -229,14 +224,14 @@ battery = BAT0
 adapter = ADP1
 full-at = 98
 
-format-charging-background = ${colors.color1}
+format-charging-background = ${colors.color6}
 format-charging = <label-charging>
 format-charging-prefix = " "
 
-format-discharging-background = ${colors.color1}
+format-discharging-background = ${colors.color6}
 format-discharging = <ramp-capacity> <label-discharging>
 
-format-full-background = ${colors.color1}
+format-full-background = ${colors.color6}
 format-full = <label-full>
 format-full-prefix = " "
 
@@ -253,6 +248,6 @@ interval = 3
 date = %b %d
 time = %l:%M
 
-format-background = ${colors.color2}
+format-background = ${colors.color1}
 label =  "%{T2}%{T-} %date% %time%  "
 

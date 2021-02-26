@@ -23,6 +23,3 @@ window:
         y: 10
 
     dynamic_padding: false
-
-key_bindings:
-    - { key: V,        mods: Control, action: Paste }

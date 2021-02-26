@@ -20,14 +20,24 @@ autoload -Uz compinit
 zstyle ':completion:*' menu select
 compinit
 # End of lines added by compinstall
-if [ $TERM = 'linux' ]; then
+
+if [ $TERM = 'linux' ]; then 
+	# No x running
+	# Add function to set brightness and lower brightness to save battery
+	alias brightness='sudo tee /sys/class/backlight/intel_backlight/brightness <<< '
+
+	# Dirrerent prompt doesn't include powerline characters
 	PROMPT='%F{yellow}%n%f %F{red}%2~%f %F{green}%#%f '
 
+	# RIght prompt shows battery
 	setopt promptsubst
-	RPROMPT='%F{yellow}Battery: $(acpi | grep -o "[0-9][0-9]%")%%f'
+	RPROMPT='%F{yellow}Battery: $(acpi | grep -o "[0-9]*%")%%f'
+
+	# Remind myself how to set brightness:
+	echo "Set brightness using 'brightness <value 0-1808>'"
 else
 	(cat ~/.cache/wal/sequences & )
-	PROMPT='%F{black}%K{yellow}%n %k%f%F{yellow}%K{red} %k%f%F{black}%K{red}%2~ %k%f%F{red}%K{green} %k%f%F{black}%K{green}%# %k%f%F{green}%f '
+	PROMPT='%F{blue}%f%F{black}%K{blue} %n %k%f%F{blue}%K{green} %k%f%F{black}%K{green}%2~ %k%f%F{green}%K{red} %k%f%F{black}%K{red}%# %k%f%F{red}%f '
 
 fi
 
