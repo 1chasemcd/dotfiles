@@ -1,6 +1,10 @@
 configuration {
- 	font: "UbuntuMono Nerd Font 12";
+ 	font: "FiraCode Nerd Font Mono 11";
  	modi: "drun,window,ssh";
+ 	width: 50;
+ 	columns: 2;
+ 	show-icons: true;
+ 	icon-theme: "Tela-circle";
 }
 
 
