@@ -57,6 +57,7 @@ The following packages are installed in my configuration.
 * tela-circle-icon-theme-git
 * zsh-autosuggestions
 * zsh-syntax-highlighting
+* python-cairosvg
 
 
 
