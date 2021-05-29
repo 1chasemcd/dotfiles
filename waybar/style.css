@@ -1,0 +1,100 @@
+@import url('file:///home/chasemcdonald/.cache/wal/colors-waybar.css');
+
+
+
+* {
+    border: none;
+    font-family: FiraCode Nerd Font Mono;
+    margin: 0;
+	padding: 0;
+    font-weight: bold;
+    font-size: 11pt;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+}
+
+.modules-left, .modules-center, .modules-right {
+	margin: 10px 10px 0 10px;
+	background: @background;
+	border-radius: 8px;
+}
+
+#workspaces button {
+    color: @foreground;
+    padding: 6px;
+}
+
+#taskbar button {
+    color: @foreground;
+    padding: 0 6px;
+}
+
+#workspaces button:hover, #taskbar button:hover {
+	border-radius: 8px;
+}
+
+#workspaces button.focused {
+	color: @color1;
+}
+
+#mode {
+	border-radius: 0 8px 8px 0;
+	padding: 6px;
+}
+
+#tray {
+	margin-right: 10px;
+	padding: 6px 10px;
+}
+
+#cpu, #memory, #temperature, #network, #backlight, #pulseaudio, #battery, #clock {
+	padding: 6px 10px;
+}
+
+#cpu, #memory, #temperature {
+	background: @color6;
+	color: @background;
+}
+
+#cpu {
+	border-radius: 8px 0 0 8px;
+}
+
+#clock {
+	background: @color2;
+	color: @background;
+	border-radius: 0 8px 8px 0;
+}
+
+@keyframes color-pulse1 {
+	to {
+		color: @color1
+	}
+}
+
+@keyframes color-pulse2 {
+	to {
+		color: @color2
+	}
+}
+
+#battery.charging {
+	animation-name: color-pulse2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#battery.warning:not(.charging) {
+
+    animation-name: color-pulse1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
