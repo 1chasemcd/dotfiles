@@ -4,51 +4,59 @@ The configuration files for my Arch Linux setup
 ## Symlinks
 In order to make these configuration files work, the following symlinks must first be made:
 
-* ln -s ~/.config/x/xinitrc ~/.xinitrc
-* ln -s ~/.config/x/Xresources ~/.Xresources
 * ln -s ~/.config/zsh/zshrc ~/.zshrc
+* ln -s ~/.config/xournalpp ~/.xournalpp
 
 ## Packages
 
 The following packages are installed in my configuration.
 
 ### Wireless
-* broadcom-wl-dkms
-* dkms
 * linux-headers
 * network-manager
 * wpa_supplicant
 
 ### System
-* intel-ucode
+* amd-ucode
 * mesa
-* xf86-video-intel
+* brightnessctl
 * yay
 * sudo
 * zsh
 
 ### Display Manager, Window Manager, and Other Desktop Software
-* xorg
-* i3-gaps
-* polybar
+* wayland
+* sway
+* waybar
 * rofi
 * python-pywal
-* feh
+* python-pywalfox
 
 ### Applications
 * alacritty
 * firefox
-* micro (AUR)
+* micro
 * mirage (AUR)
-* visual-studio-code-bin (AUR)
+* code
+* code-marketplace (AUR)
+* discord
+* kicad
+* tor-browser
+* wf-recorder
+* xournalpp
 
 ### Other Utilities
 * zip
 * unzip
+* htop
 * neofetch
 * acpi
 * xclip
-* nerd-fonts-ubuntu-mono (AUR)
+* nerd-fonts-fira-code (AUR)
+* spaceship-prompt-git (AUR)
+* tela-circle-icon-theme-git
+* zsh-autosuggestions
+* zsh-syntax-highlighting
 
 
 
