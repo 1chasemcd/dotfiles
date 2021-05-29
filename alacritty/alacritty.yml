@@ -1,25 +1,26 @@
 # Font configuration (changes require restart)
 font:
     # The size to use.
-    size: 12
+    size: 11
     # The normal (roman) font face to use.
     normal:
-        family: UbuntuMono Nerd Font Mono
+        family: FiraCode Nerd Font Mono
         style: Regular
 
     # The bold font face
     bold:
-        family: UbuntuMono Nerd Font Mono
+        family: FiraCode Nerd Font Mono
         style: Bold
 
     # The italic font face
     italic:
-        family: UbuntuMono Nerd Font Mono
+        family: FiraCode Nerd Font Mono
         style: Italic
 
-window: 
+window:
     padding:
         x: 10
         y: 10
 
     dynamic_padding: false
+
