@@ -2,46 +2,47 @@
 
 rofi_options_string="alacritty
 vscode
-i3
+sway
 micro
 mirage
 neofetch
-polybar
+waybar
 rofi
-xinit
-zsh"
+zsh
+config-menu"
 
-config_selection=$(echo -e $rofi_options_string | rofi -dmenu -p "Config")
+config_selection=$(echo -e $rofi_options_string | rofi -dmenu -width 25 -no-show-icons -p "Config")
 
 case $config_selection in
 	"alacritty") 
-		code ~/.config/alacritty/alacritty.yml
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.config/alacritty/alacritty.yml"
 	;;
-	"i3") 
-		code ~/.config/i3/config
+	"sway") 
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.config/sway/config"
 	;;
 	"micro") 
-		code ~/.config/micro/settings.json
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.config/micro/settings.json"
 	;;
 	"mirage") 
-		code ~/.config/mirage/mirage1.conf
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.config/mirage/mirage1.conf"
 	;;
 	"neofetch") 
-		code ~/.config/neofetch/config.conf
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.config/neofetch/config.conf"
 	;;
-	"polybar") 
-		code ~/.config/polybar/config
+	"waybar")
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.config/waybar/config" &
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.config/waybar/style.css"
 	;;
 	"rofi") 
-		code ~/.config/rofi/config.rasi
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.config/rofi/config.rasi"
 	;;
 	"vscode") 
-		code ~/.config/Code/User/settings.json
-	;;
-	"xinit") 
-		code ~/.config/xinit/xinitrc
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.config/Code\ -\ OSS/User/settings.json"
 	;;
 	"zsh") 
-		code ~/.config/zsh/zshrc
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.zshrc"
+	;;
+	"config-menu") 
+		alacritty -e zsh -c "cat ~/.cache/wal/sequences ; micro ~/.config/rofi/config-menu.sh"
 	;;
 esac
