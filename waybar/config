@@ -73,21 +73,21 @@
 
 	"cpu": {
 		"format": " {usage}%",
-		"on-click": "alacritty -e zsh -c 'cat ~/.cache/wal/sequences ; htop'",
+		"on-click": "alacritty -e zsh -c 'cat ~/.config/wpg/sequences ; htop'",
 		"tooltip": true
 	},
 
 	"memory": {
 		"format": " {used:0.1f}GiB",
 		"tooltip-format": "{used:0.1f}GiB / {avail:0.1f}GiB",
-		"on-click": "alacritty -e zsh -c 'cat ~/.cache/wal/sequences ; htop'"
+		"on-click": "alacritty -e zsh -c 'cat ~/.config/wpg/sequences ; htop'"
 	},
 
 	"temperature": {
 		"critical-threshold": 80,
 		"format": "{icon} {temperatureC}°C",
 		"format-icons": ["", "", "", "", ""],
-		"on-click": "alacritty -e zsh -c 'cat ~/.cache/wal/sequences ; htop'",
+		"on-click": "alacritty -e zsh -c 'cat ~/.config/wpg/sequences ; htop'",
 		"tooltip": false
 	},
 

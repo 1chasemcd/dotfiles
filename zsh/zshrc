@@ -17,7 +17,7 @@ compinit
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 # Not supported in the "fish" shell.
-(cat ~/.cache/wal/sequences &)
+(cat ~/.config/wpg/sequences &)
 
 autoload -U promptinit; promptinit
 prompt spaceship
@@ -73,4 +73,7 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
-
+# Start sway if just logging in
+if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
+  exec sway
+fi

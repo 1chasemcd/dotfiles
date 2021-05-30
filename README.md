@@ -12,31 +12,34 @@ In order to make these configuration files work, the following symlinks must fir
 The following packages are installed in my configuration.
 
 ### Wireless
-* linux-headers
 * network-manager
-* wpa_supplicant
 
 ### System
 * amd-ucode
-* mesa
 * brightnessctl
 * yay
 * sudo
 * zsh
+* grub
+* efibootmgr
+* os-prober
 
 ### Display Manager, Window Manager, and Other Desktop Software
 * wayland
+* xorg-xwayland
 * sway
+* swayidle
+* swaylock
 * waybar
 * rofi
 * python-pywal
-* python-pywalfox
+* python-pywalfox (AUR)
 
 ### Applications
 * alacritty
 * firefox
 * micro
-* mirage (AUR)
+* mirage-python3 (AUR)
 * code
 * code-marketplace (AUR)
 * discord
@@ -46,15 +49,16 @@ The following packages are installed in my configuration.
 * xournalpp
 
 ### Other Utilities
+* base-devel
+* git
+* man-db
 * zip
 * unzip
 * htop
 * neofetch
-* acpi
-* xclip
 * nerd-fonts-fira-code (AUR)
 * spaceship-prompt-git (AUR)
-* tela-circle-icon-theme-git
+* tela-circle-icon-theme-git (AUR)
 * zsh-autosuggestions
 * zsh-syntax-highlighting
 * python-cairosvg

@@ -19,8 +19,11 @@ window#waybar {
 
 .modules-left, .modules-center, .modules-right {
 	margin: 10px 10px 0 10px;
-	background: @background;
 	border-radius: 8px;
+}
+
+.modules-left, .modules-center {
+	background: @background;
 }
 
 #workspaces button {
@@ -68,6 +71,10 @@ window#waybar {
 	background: @color2;
 	color: @background;
 	border-radius: 0 8px 8px 0;
+}
+
+#backlight, #network, #pulseaudio, #battery {
+	background: @background;
 }
 
 @keyframes color-pulse1 {
