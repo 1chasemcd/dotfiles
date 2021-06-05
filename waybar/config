@@ -6,9 +6,10 @@
 
 {
 	// Choose the order of the modules
+	"position": "top",
+	"margin": "10px 10px 0 10px",
 	"modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
-    "modules-center": ["wlr/taskbar"],
-    "modules-right": ["cpu", "memory", "temperature", "backlight", "pulseaudio", "network", "battery", "clock"],
+    "modules-right": ["custom/tabletmode", "cpu", "memory", "temperature", "backlight", "pulseaudio", "network", "battery", "clock"],
 
 	// Modules configuration
 	"sway/workspaces": {
@@ -18,12 +19,25 @@
 			"1": [],
 			"2": [],
 			"3": [],
-			"4": []
+			"4": [],
+			"5": [],
+			"6": [],
+			"7": [],
+			"8": [],
+			"9": [],
+			"10": []
 		}
 	},
 
+	"custom/tabletmode": {
+		"format": "臨",
+		"on-click": "~/.config/custom-tabletmode/toggle.zsh",
+		"exec":     "~/.config/custom-tabletmode/get-waybar-class.zsh",
+		"interval": 1
+	},
+
 	"sway/mode": {
-		"format": "// {}"
+		"format": "{}"
 	},
 
 	"wlr/taskbar": {
@@ -46,7 +60,7 @@
 		"format": "{icon} {volume}%",
 		"format-bluetooth": "{icon}  {volume}%",
 		"format-bluetooth-muted": "ﱝ ",
-		"format-muted": "ﱝ",
+		"format-muted": " {volume}%",
 		"format-icons": {
 			"headphone": "",
 			"hands-free": "",
@@ -68,7 +82,8 @@
 		"tooltip-format": "{ifname}",
 		"tooltip-format-wifi": "{ipaddr} on {essid}",
 		"tooltip-format-ethernet": "{ipaddr} on {essid}",
-		"tooltip-format-disconnected": "Network Disconnected"
+		"tooltip-format-disconnected": "Network Disconnected",
+		"on-click": "nm-connection-editor"
 	},
 
 	"cpu": {

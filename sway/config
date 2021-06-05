@@ -4,6 +4,13 @@ include ~/.cache/wal/colors-sway
 
 set $mod Mod4
 
+# start launch applications
+exec --no-startup-id wpg -R
+exec_always killall swayidle
+exec_always killall waybar
+exec_always waybar
+exec --no-startup-id pywalfox update
+
 # set colorscheme
 
 # class                 border      backgr.     text        indicator   child_border
@@ -17,11 +24,12 @@ client.background       $background
 exec_always python3 ~/.config/background/switcher.py && swaymsg "output * bg ~/.config/background/output.png fill"
 # output * bg ~/.config/background/output.png fill
 
-exec swayidle -w \
+exec_always swayidle -w \
 timeout 120 'swaylock -f -c 000000' \
-timeout 180 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+timeout 120 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
 timeout 360 'sudo poweroff' \
 before-sleep 'swaylock -f -c 000000'
+
 
 input "1739:52861:SYNA32B3:01_06CB:CE7D_Touchpad" {
 	tap enabled
@@ -43,9 +51,9 @@ font pango:FiraCode Nerd Font Mono 11
 bindsym $mod+c exec --no-startup-id ~/.config/rofi/config-menu.sh
 
 # use Pulseaudio to control audio
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pulsemixer --change-volume +5"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pulsemixer --change-volume -5"
-bindsym XF86AudioMute        exec --no-startup-id "pulsemixer --toggle-mute"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume alsa_output.pci-0000_04_00.6.HiFi__hw_Generic_1__sink +5%"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume alsa_output.pci-0000_04_00.6.HiFi__hw_Generic_1__sink -5%"
+bindsym XF86AudioMute        exec --no-startup-id "pactl set-sink-mute alsa_output.pci-0000_04_00.6.HiFi__hw_Generic_1__sink toggle"
 
 # backlight
 bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl s +5%"
@@ -65,7 +73,6 @@ bindcode $mod+49 exec wpg --theme random_dark
 
 # setup rofi commands for running applications, toggling windows, and using wifi, power, etc.
 bindsym $mod+space exec rofi -show drun
-bindsym $mod+Tab   exec rofi -show window
 bindsym $mod+Escape exec ~/.config/rofi/power-menu.sh
 
 # common applications
@@ -170,10 +177,4 @@ mode "resize" {
 
 bindsym $mod+Shift+r mode "resize"
 
-# start launch applications
-exec_always killall swayidle
-exec_always killall waybar
-exec_always waybar
-exec --no-startup-id wpg -R
-exec --no-startup-id pywalfox update
-exec --no-startup-id "pulsemixer --mute"
+

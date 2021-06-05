@@ -1,0 +1,82 @@
+[2021-06-03 09:13:17.380] [exthost] [info] extension host started
+[2021-06-03 09:13:17.448] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-06-03 09:13:17.448] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/debug-auto-launch/dist/extension
+[2021-06-03 09:13:17.451] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-06-03 09:13:17.451] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/git/dist/main
+[2021-06-03 09:13:17.465] [exthost] [info] ExtensionService#_doActivateExtension dlasagno.wal-theme {"startup":true,"extensionId":{"value":"dlasagno.wal-theme","_lower":"dlasagno.wal-theme"},"activationEvent":"*"}
+[2021-06-03 09:13:17.465] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/chasemcdonald/.vscode-oss/extensions/dlasagno.wal-theme-1.0.4/out/extension.js
+[2021-06-03 09:13:17.520] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-06-03 09:13:17.521] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github/dist/extension.js
+[2021-06-03 09:13:17.531] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-06-03 09:13:17.531] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/ms-vscode.js-debug/src/extension.js
+[2021-06-03 09:13:17.645] [exthost] [info] eager extensions activated
+[2021-06-03 09:13:17.667] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-06-03 09:13:17.667] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/emmet/dist/node/emmetNodeMain
+[2021-06-03 09:13:17.671] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-06-03 09:13:17.671] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/merge-conflict/dist/mergeConflictMain
+[2021-06-03 09:13:17.673] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-06-03 09:13:17.673] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/testing-editor-contributions/dist/extension.js
+[2021-06-03 09:20:17.777] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-06-03 09:20:18.784] [exthost] [info] exiting with code 0
+[2021-06-03 09:20:19.132] [exthost] [info] extension host started
+[2021-06-03 09:20:19.174] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-06-03 09:20:19.174] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/debug-auto-launch/dist/extension
+[2021-06-03 09:20:19.178] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-06-03 09:20:19.179] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/git/dist/main
+[2021-06-03 09:20:19.193] [exthost] [info] ExtensionService#_doActivateExtension dlasagno.wal-theme {"startup":true,"extensionId":{"value":"dlasagno.wal-theme","_lower":"dlasagno.wal-theme"},"activationEvent":"*"}
+[2021-06-03 09:20:19.193] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/chasemcdonald/.vscode-oss/extensions/dlasagno.wal-theme-1.0.4/out/extension.js
+[2021-06-03 09:20:19.204] [exthost] [info] ExtensionService#_doActivateExtension rust-lang.rust {"startup":true,"extensionId":{"value":"rust-lang.rust","_lower":"rust-lang.rust"},"activationEvent":"workspaceContains:Cargo.toml"}
+[2021-06-03 09:20:19.204] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/extension.js
+[2021-06-03 09:20:19.301] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-06-03 09:20:19.301] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github/dist/extension.js
+[2021-06-03 09:20:19.325] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-06-03 09:20:19.325] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/ms-vscode.js-debug/src/extension.js
+[2021-06-03 09:20:19.428] [exthost] [info] eager extensions activated
+[2021-06-03 09:20:19.476] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-06-03 09:20:19.476] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/emmet/dist/node/emmetNodeMain
+[2021-06-03 09:20:19.482] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-06-03 09:20:19.482] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/merge-conflict/dist/mergeConflictMain
+[2021-06-03 09:20:19.484] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-06-03 09:20:19.484] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/testing-editor-contributions/dist/extension.js
+[2021-06-03 10:00:35.443] [exthost] [info] ExtensionService#_doActivateExtension bungcip.better-toml {"startup":false,"extensionId":{"value":"bungcip.better-toml","_lower":"bungcip.better-toml"},"activationEvent":"onLanguage:toml"}
+[2021-06-03 10:00:35.444] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/chasemcdonald/.vscode-oss/extensions/bungcip.better-toml-0.3.2/out/src/extension
+[2021-06-03 10:06:37.574] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-06-03 10:06:37.574] [exthost] [error] TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:18:27.954] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-06-03 10:18:27.954] [exthost] [error] TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:19:09.341] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-06-03 10:19:09.341] [exthost] [error] TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:19:16.691] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-06-03 10:19:16.691] [exthost] [error] TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:20:130
+[2021-06-03 10:19:26.020] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-06-03 10:19:26.021] [exthost] [error] TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:19:31.404] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-06-03 10:19:31.404] [exthost] [error] TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:20:130
+[2021-06-03 10:19:46.614] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-06-03 10:19:46.614] [exthost] [error] TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:19:59.515] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-06-03 10:19:59.516] [exthost] [error] TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:20:130
+[2021-06-03 10:23:14.098] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-06-03 10:23:14.099] [exthost] [error] TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:23:16.337] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-06-03 10:23:16.338] [exthost] [error] TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105

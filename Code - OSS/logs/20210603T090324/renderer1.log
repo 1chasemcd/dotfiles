@@ -1,0 +1,27 @@
+[2021-06-03 09:03:26.973] [renderer1] [error] Command failed: rustup component list --toolchain 
+error: error: The argument '--toolchain <toolchain>' requires a value but none was supplied
+
+USAGE:
+    rustup component list --toolchain <toolchain>
+
+For more information try --help
+
+: Error: Command failed: rustup component list --toolchain 
+error: error: The argument '--toolchain <toolchain>' requires a value but none was supplied
+
+USAGE:
+    rustup component list --toolchain <toolchain>
+
+For more information try --help
+
+
+	at ChildProcess.exithandler (child_process.js:317:12)
+	at ChildProcess.emit (events.js:315:20)
+	at maybeClose (internal/child_process.js:1048:16)
+	at Socket.<anonymous> (internal/child_process.js:439:11)
+	at Socket.emit (events.js:315:20)
+	at Pipe.<anonymous> (net.js:673:12)
+[2021-06-03 09:06:39.464] [renderer1] [error] spawn git ENOENT: Error: spawn git ENOENT
+	at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)
+	at onErrorNT (internal/child_process.js:465:16)
+	at processTicksAndRejections (internal/process/task_queues.js:80:21)

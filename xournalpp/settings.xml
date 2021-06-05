@@ -10,8 +10,8 @@
   <property name="zoomStep" value="10.00000000"/>
   <property name="zoomStepScroll" value="2.00000000"/>
   <property name="displayDpi" value="72"/>
-  <property name="mainWndWidth" value="1920"/>
-  <property name="mainWndHeight" value="1011"/>
+  <property name="mainWndWidth" value="1896"/>
+  <property name="mainWndHeight" value="1015"/>
   <property name="maximized" value="true"/>
   <property name="showSidebar" value="true"/>
   <property name="sidebarWidth" value="179"/>
@@ -76,7 +76,7 @@
   <property name="experimentalInputSystemEnabled" value="false"/>
   <property name="inputSystemTPCButton" value="false"/>
   <property name="inputSystemDrawOutsideWindow" value="true"/>
-  <property name="font" font="Sans" size="12.00000000"/>
+  <property name="font" font="Source Code Pro Heavy" size="12.00000000"/>
   <data name="buttonConfig">
     <data name="default">
       <attribute name="color" type="hex" value="ff1a5fb4"/>
@@ -166,7 +166,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="ff0000"/>
+      <attribute name="color" type="hex" value="00c0ff"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
@@ -189,7 +189,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="text">
-      <attribute name="color" type="hex" value="000000"/>
+      <attribute name="color" type="hex" value="00c0ff"/>
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="verticalSpace">

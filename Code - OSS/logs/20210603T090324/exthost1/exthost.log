@@ -1,0 +1,26 @@
+[2021-06-03 09:03:25.739] [exthost] [info] extension host started
+[2021-06-03 09:03:25.786] [exthost] [info] ExtensionService#_doActivateExtension rust-lang.rust {"startup":false,"extensionId":{"value":"rust-lang.rust","_lower":"rust-lang.rust"},"activationEvent":"onLanguage:rust"}
+[2021-06-03 09:03:25.787] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/extension.js
+[2021-06-03 09:03:25.824] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-06-03 09:03:25.824] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/debug-auto-launch/dist/extension
+[2021-06-03 09:03:25.827] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-06-03 09:03:25.827] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/git/dist/main
+[2021-06-03 09:03:25.840] [exthost] [info] ExtensionService#_doActivateExtension dlasagno.wal-theme {"startup":true,"extensionId":{"value":"dlasagno.wal-theme","_lower":"dlasagno.wal-theme"},"activationEvent":"*"}
+[2021-06-03 09:03:25.840] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/chasemcdonald/.vscode-oss/extensions/dlasagno.wal-theme-1.0.4/out/extension.js
+[2021-06-03 09:03:25.949] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-06-03 09:03:25.949] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github/dist/extension.js
+[2021-06-03 09:03:25.989] [exthost] [info] eager extensions activated
+[2021-06-03 09:03:26.007] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-06-03 09:03:26.007] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/ms-vscode.js-debug/src/extension.js
+[2021-06-03 09:03:26.106] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-06-03 09:03:26.106] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/emmet/dist/node/emmetNodeMain
+[2021-06-03 09:03:26.112] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-06-03 09:03:26.112] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/merge-conflict/dist/mergeConflictMain
+[2021-06-03 09:03:26.114] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-06-03 09:03:26.114] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/testing-editor-contributions/dist/extension.js
+[2021-06-03 09:06:38.460] [exthost] [error] Error: spawn git ENOENT
+	at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)
+	at onErrorNT (internal/child_process.js:465:16)
+	at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[2021-06-03 09:13:14.647] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-06-03 09:13:15.658] [exthost] [info] exiting with code 0

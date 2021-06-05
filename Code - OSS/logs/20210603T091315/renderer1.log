@@ -1,0 +1,60 @@
+[2021-06-03 10:06:37.578] [renderer1] [error] Cannot read property 'value' of undefined: TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:18:27.962] [renderer1] [error] Cannot read property 'value' of undefined: TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:19:09.343] [renderer1] [error] Cannot read property 'value' of undefined: TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:19:16.693] [renderer1] [error] Cannot read property 'value' of undefined: TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:20:130
+[2021-06-03 10:19:26.023] [renderer1] [error] Cannot read property 'value' of undefined: TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:19:31.406] [renderer1] [error] Cannot read property 'value' of undefined: TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:20:130
+[2021-06-03 10:19:46.615] [renderer1] [error] Cannot read property 'value' of undefined: TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:19:59.518] [renderer1] [error] Cannot read property 'value' of undefined: TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:20:130
+[2021-06-03 10:20:44.870] [renderer1] [error] Cannot read property 'children' of undefined: TypeError: Cannot read property 'children' of undefined
+    at n.get children [as children] (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1937:6235)
+    at h (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1937:7630)
+    at Yt.refreshTOCTree (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2188:106358)
+    at Yt.triggerSearch (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2188:108228)
+    at Yt.onSearchInputChanged (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2188:106781)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2188:93110
+    at l.fire (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2098:14638
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:580:14170
+    at l.fire (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at X.endDeferredEmit (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:589:30323)
+    at W.pushEditOperations (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:587:925)
+    at p.executeEdits (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:617:479)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:618:3260
+    at i._withViewEventsCollector (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:618:5338)
+    at i._executeCursorEdit (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:618:3172)
+    at i.executeEdits (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:618:3225)
+    at hn.executeEdits (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:654:10787)
+    at b.setValue (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2098:15491)
+    at Yt._setOptions (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2188:89436)
+    at Yt.setInput (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2188:88690)
+    at async l.doSetInput (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1798:10549)
+    at async l.openEditor (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1798:9103)
+    at async file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2452:15923
+    at async ke.run (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2640:25273)
+    at async T.runAction (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:171:30946)
+    at async T.run (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:171:30845)
+    at async runAction (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:1424:34663)
+[2021-06-03 10:23:14.101] [renderer1] [error] Cannot read property 'value' of undefined: TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:23:16.339] [renderer1] [error] Cannot read property 'value' of undefined: TypeError: Cannot read property 'value' of undefined
+	at SignatureHelpProvider.hoverToSignatureHelp (/home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:75:41)
+	at /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:105
+[2021-06-03 10:35:39.147] [renderer1] [error] Failed to execute git

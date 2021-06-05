@@ -1,4 +1,5 @@
 {
     "workbench.colorTheme": "Wal Bordered",
-    "window.titleBarStyle": "custom"
+    "editor.fontFamily": "'FiraCode Nerd Font Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true
 }

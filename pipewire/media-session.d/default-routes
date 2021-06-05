@@ -1,0 +1,6 @@
+{
+  "default.route.alsa_card.pci-0000_04_00.1:profile:off": [ ],
+  "default.route.alsa_card.pci-0000_04_00.6:profile:off": [ ],
+  "default.route.alsa_card.pci-0000_04_00.6:profile:HiFi": [ "[Out] Speaker" ],
+  "default.route.alsa_card.pci-0000_04_00.6:output:[Out] Speaker": { "mute": true, "volumes": [ 0.000000, 0.000000 ], "channels": [ "FL", "FR" ] }
+}

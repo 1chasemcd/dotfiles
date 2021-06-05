@@ -13,17 +13,13 @@
 }
 
 window#waybar {
-    background: transparent;
-    color: white;
+    background: transparent; 
+    color: @foreground;
 }
 
-.modules-left, .modules-center, .modules-right {
-	margin: 10px 10px 0 10px;
-	border-radius: 8px;
-}
-
-.modules-left, .modules-center {
+#workspaces, #mode {
 	background: @background;
+	border-radius: 8px;
 }
 
 #workspaces button {
@@ -31,55 +27,78 @@ window#waybar {
     padding: 6px;
 }
 
-#taskbar button {
-    color: @foreground;
-    padding: 0 6px;
-}
-
-#workspaces button:hover, #taskbar button:hover {
-	border-radius: 8px;
-}
+#workspaces button:hover, #taskbar button:hover { 
+	border-radius: 8px; 
+	background: @background;
+} 
 
 #workspaces button.focused {
 	color: @color1;
 }
 
+#workspaces button.persistent, #pulseaudio.muted {
+	color: rgba(255, 255, 255, 0.2);
+}
+
 #mode {
-	border-radius: 0 8px 8px 0;
+	border-radius: 8px;
+	margin-left: 10px;
 	padding: 6px;
 }
 
-#tray {
-	margin-right: 10px;
+#custom-tabletmode, #cpu, #memory, #temperature, #network, #backlight, #pulseaudio, #battery, #clock {
 	padding: 6px 10px;
+	color: @foreground;
+	background: @background;
 }
 
-#cpu, #memory, #temperature, #network, #backlight, #pulseaudio, #battery, #clock {
-	padding: 6px 10px;
-}
-
-#cpu, #memory, #temperature {
-	background: @color6;
-	color: @background;
-}
-
-#cpu {
+#custom-tabletmode {
+	color: @color4;
 	border-radius: 8px 0 0 8px;
 }
 
-#clock {
-	background: @color2;
+#custom-tabletmode.active { 
+	background: @color4;
 	color: @background;
-	border-radius: 0 8px 8px 0;
+} 
+
+#cpu {
+	color: @color1;
 }
 
-#backlight, #network, #pulseaudio, #battery {
-	background: @background;
+#memory {
+	color: @color2;
+}
+
+#temperature {
+	color: @color3;
+}
+
+#backlight {
+	color: @color4
+}
+
+#pulseaudio {
+	color: @color5;
+}
+
+#network {
+	color: @color6;
+}
+
+#battery {
+	color: @color1;
+}
+
+
+#clock {
+	color: @color2;
+	border-radius: 0 8px 8px 0;
 }
 
 @keyframes color-pulse1 {
 	to {
-		color: @color1
+		color: @color3
 	}
 }
 

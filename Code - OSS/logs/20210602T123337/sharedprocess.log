@@ -1,0 +1,13 @@
+[2021-06-02 12:34:03.801] [sharedprocess] [info] Installing extension: rust-lang.rust
+[2021-06-02 12:34:04.819] [sharedprocess] [info] Downloaded extension: rust-lang.rust /home/chasemcdonald/.config/Code - OSS/CachedExtensionVSIXs/rust-lang.rust-0.7.8
+[2021-06-02 12:34:05.111] [sharedprocess] [info] Extracted extension to /home/chasemcdonald/.vscode-oss/extensions/.e1ff0d6c-4963-4e27-b77d-bfab19282285: rust-lang.rust
+[2021-06-02 12:34:05.124] [sharedprocess] [info] Renamed to /home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8
+[2021-06-02 12:34:05.128] [sharedprocess] [info] Installation completed. rust-lang.rust
+[2021-06-02 12:34:05.137] [sharedprocess] [info] Extensions installed successfully: rust-lang.rust
+[2021-06-02 12:34:19.460] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-06-02 12:35:32.464] [sharedprocess] [info] Installing extension: bungcip.better-toml
+[2021-06-02 12:35:32.952] [sharedprocess] [info] Downloaded extension: bungcip.better-toml /home/chasemcdonald/.config/Code - OSS/CachedExtensionVSIXs/bungcip.better-toml-0.3.2
+[2021-06-02 12:35:33.176] [sharedprocess] [info] Extracted extension to /home/chasemcdonald/.vscode-oss/extensions/.27bd7290-419f-4be5-b7d1-0db4be5b4b2d: bungcip.better-toml
+[2021-06-02 12:35:33.181] [sharedprocess] [info] Renamed to /home/chasemcdonald/.vscode-oss/extensions/bungcip.better-toml-0.3.2
+[2021-06-02 12:35:33.185] [sharedprocess] [info] Installation completed. bungcip.better-toml
+[2021-06-02 12:35:33.191] [sharedprocess] [info] Extensions installed successfully: bungcip.better-toml

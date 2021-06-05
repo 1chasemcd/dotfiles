@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-power_selection=$(echo -e " Exit\n⏻ Shut Down\n Reboot" | rofi -dmenu -width 10 -lines 3 -no-show-icons -p "Power")
+power_selection=$(echo -e " Exit\n⏻ Shut Down\n Reboot" | rofi -width 15 -lines 3  -dmenu -p "Power")
 
 if [ "$power_selection" = " Exit" ]; then 
 	swaymsg exit

@@ -1,17 +1,28 @@
 {
     "telemetry.machineId": "7332e7e36f375e3f2ac2bbd8a36d5114a6f5cfc4d75274e8368308c8b8364a45",
     "openedPathsList": {
-        "entries": []
+        "entries": [
+            {
+                "folderUri": "file:///home/chasemcdonald/Code/learning-rust/hello-world"
+            },
+            {
+                "fileUri": "file:///home/chasemcdonald/.config/waybar/style.css"
+            },
+            {
+                "fileUri": "file:///home/chasemcdonald/.zshrc"
+            }
+        ]
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/chasemcdonald/.config/Code - OSS/Backups/1622338225367",
+            "folder": "file:///home/chasemcdonald/Code/learning-rust/hello-world",
+            "backupPath": "/home/chasemcdonald/.config/Code - OSS/Backups/791f8fa4eab3815bcaf366466547e446",
             "uiState": {
                 "mode": 0,
-                "x": 12,
-                "y": 53,
-                "width": 1896,
-                "height": 1015
+                "x": 448,
+                "y": 156,
+                "width": 1024,
+                "height": 768
             }
         },
         "openedWindows": []
@@ -50,8 +61,47 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "fsPath": "/home/chasemcdonald/Code/learning-rust/hello-world",
+                                        "external": "file:///home/chasemcdonald/Code/learning-rust/hello-world",
+                                        "path": "/home/chasemcdonald/Code/learning-rust/hello-world",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Code/learning-rust/hello-world"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/chasemcdonald/.config/waybar/style.css",
+                                        "path": "/home/chasemcdonald/.config/waybar/style.css",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/waybar/style.css"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/chasemcdonald/.zshrc",
+                                        "path": "/home/chasemcdonald/.zshrc",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.zshrc"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -170,8 +220,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder",
-                        "enabled": false
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -535,8 +584,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "Toggle &&Word Wrap",
-                        "enabled": false
+                        "label": "Toggle &&Word Wrap"
                     },
                     {
                         "id": "editor.action.toggleMinimap",
@@ -563,8 +611,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -573,8 +620,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -891,8 +937,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1440,5 +1485,6 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#2c2c2c"
+    "themeBackground": "#232528",
+    "pickerWorkingDir": "/home/chasemcdonald/Code/learning-rust"
 }
