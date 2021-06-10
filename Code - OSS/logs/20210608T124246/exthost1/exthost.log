@@ -1,0 +1,13 @@
+[2021-06-08 12:42:47.870] [exthost] [info] extension host started
+[2021-06-08 12:42:47.907] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-06-08 12:42:47.907] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/debug-auto-launch/dist/extension
+[2021-06-08 12:42:47.910] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-06-08 12:42:47.911] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/git/dist/main
+[2021-06-08 12:42:47.929] [exthost] [info] ExtensionService#_doActivateExtension dlasagno.wal-theme {"startup":true,"extensionId":{"value":"dlasagno.wal-theme","_lower":"dlasagno.wal-theme"},"activationEvent":"*"}
+[2021-06-08 12:42:47.929] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/chasemcdonald/.vscode-oss/extensions/dlasagno.wal-theme-1.0.4/out/extension.js
+[2021-06-08 12:42:47.946] [exthost] [info] ExtensionService#_doActivateExtension rust-lang.rust {"startup":true,"extensionId":{"value":"rust-lang.rust","_lower":"rust-lang.rust"},"activationEvent":"workspaceContains:Cargo.toml"}
+[2021-06-08 12:42:47.946] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/chasemcdonald/.vscode-oss/extensions/rust-lang.rust-0.7.8/out/src/extension.js
+[2021-06-08 12:42:48.057] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-06-08 12:42:48.057] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github/dist/extension.js
+[2021-06-08 12:42:48.073] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-06-08 12:42:49.078] [exthost] [info] exiting with code 0

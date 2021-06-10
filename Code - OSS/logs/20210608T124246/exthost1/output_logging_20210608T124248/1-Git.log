@@ -1,0 +1,6 @@
+Looking for git in: git
+Using git 2.32.0 from git
+> git rev-parse --git-dir
+Open repository: /home/chasemcdonald/Code/learning-rust/hello-world
+> git status -z -u
+Open repository: /home/chasemcdonald/Code/learning-rust/hello-world

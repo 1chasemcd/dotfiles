@@ -1,48 +1,51 @@
 #!/bin/zsh
 
-rofi_options_string="alacritty
+rofi_options_string="kitty
 vscode
-sway
+i3
 micro
 mirage
 neofetch
-waybar
+polybar
 rofi
 zsh
+picom
 config-menu"
 
 config_selection=$(echo -e $rofi_options_string | rofi -dmenu -width 25 -no-show-icons -p "Config")
 
 case $config_selection in
-	"alacritty") 
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/alacritty/alacritty.yml"
+	"kitty") 
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/kitty/kitty.conf"
 	;;
-	"sway") 
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/sway/config"
+	"i3") 
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/i3/config"
 	;;
 	"micro") 
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/micro/settings.json"
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/micro/settings.json"
 	;;
 	"mirage") 
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/mirage/mirage1.conf"
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/mirage/mirage.conf"
 	;;
 	"neofetch") 
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/neofetch/config.conf"
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/neofetch/config.conf"
 	;;
-	"waybar")
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/waybar/config" &
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/waybar/style.css"
+	"polybar")
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/polybar/config"
 	;;
 	"rofi") 
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/rofi/config.rasi"
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/rofi/config.rasi"
 	;;
 	"vscode") 
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/Code\ -\ OSS/User/settings.json"
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/Code\ -\ OSS/User/settings.json"
 	;;
 	"zsh") 
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.zshrc"
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/zsh/zshrc"
+	;;
+	"picom") 
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/picom/picom.conf"
 	;;
 	"config-menu") 
-		alacritty -e zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/rofi/config-menu.sh"
+		kitty zsh -c "cat ~/.config/wpg/sequences ; micro ~/.config/rofi/config-menu.sh"
 	;;
 esac

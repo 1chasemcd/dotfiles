@@ -18,11 +18,11 @@
             "folder": "file:///home/chasemcdonald/Code/learning-rust/hello-world",
             "backupPath": "/home/chasemcdonald/.config/Code - OSS/Backups/791f8fa4eab3815bcaf366466547e446",
             "uiState": {
-                "mode": 0,
-                "x": 448,
-                "y": 156,
-                "width": 1024,
-                "height": 768
+                "mode": 1,
+                "x": 965,
+                "y": 55,
+                "width": 945,
+                "height": 1015
             }
         },
         "openedWindows": []
@@ -61,7 +61,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -620,7 +621,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -937,7 +939,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1485,6 +1488,6 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#232528",
+    "themeBackground": "#08414f",
     "pickerWorkingDir": "/home/chasemcdonald/Code/learning-rust"
 }

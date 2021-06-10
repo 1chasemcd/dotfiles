@@ -1,5 +1,5 @@
 [window]
-w = 622
+w = 1900
 h = 1015
 toolbar = True
 statusbar = True
@@ -13,7 +13,7 @@ bgcolor-blue = 0
 open_all = True
 hidden = False
 use_last_dir = True
-last_dir = /home/chasemcdonald
+last_dir = /usr/share/icons/Tela-circle/scalable/apps
 fixed_dir = /home/chasemcdonald
 open_mode = 0
 last_mode = 2
@@ -51,7 +51,23 @@ shortcuts[3] = <Control><Alt>f
 batch[3] = False
 
 [recent]
-num_recent = 1
-num[0] = 65
-urls[0,0] = /home/chasemcdonald/.config/wpg/samples/output.png_wal_sample.png
+num_recent = 9
+num[0] = 55
+urls[0,0] = /usr/share/icons/Tela-circle/scalable/apps/netbeans.svg
+num[1] = 56
+urls[1,0] = /usr/share/icons/Tela-circle/scalable/apps/noblenote.svg
+num[2] = 61
+urls[2,0] = /usr/share/icons/Tela-circle/scalable/apps/mx-menu-editor.svg
+num[3] = 62
+urls[3,0] = /usr/share/icons/Tela-circle/scalable/apps/mscore-portable.svg
+num[4] = 60
+urls[4,0] = /usr/share/icons/Tela-circle/scalable/apps/ms-powerpoint.svg
+num[5] = 51
+urls[5,0] = /usr/share/icons/Tela-circle/scalable/apps/mega.svg
+num[6] = 57
+urls[6,0] = /usr/share/icons/Tela-circle/scalable/apps/maxima-new.svg
+num[7] = 63
+urls[7,0] = /usr/share/icons/Tela-circle/scalable/apps/lutris_minecraft.svg
+num[8] = 62
+urls[8,0] = /usr/share/icons/Tela-circle/scalable/apps/lutris_terraria.svg
 

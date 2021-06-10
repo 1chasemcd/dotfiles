@@ -1,0 +1,286 @@
+[colors]
+background = ${xrdb:color0:#000}
+foreground = ${xrdb:color7:#fff}
+foreground-alt = ${xrdb:color7:#000}
+color1 = ${xrdb:color1:#f00}
+color2 = ${xrdb:color2:#ff0}
+color3 = ${xrdb:color4:#0f0}
+color4 = ${xrdb:color3:#00f}
+color5 = ${xrdb:color6:#f0f}
+color6 = ${xrdb:color5:#0ff}
+color8 = ${xrdb:color8:#888}
+
+[bar/base]
+monitor = ${env:MONITOR:}
+radius = 10
+height = 35
+border-size = 10
+border-bottom-size = 0
+bottom = false
+module-margin = 1
+fixed-center = true
+enable-ipc = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = FiraCode Nerd Font Mono:style=Bold:size=11;1
+font-1 = FiraCode Nerd Font Mono:style=Regular:size=20;4
+font-2 = FiraCode Nerd Font Mono:style=Regular:size=24;4
+font-3 = FiraCode Nerd Font Mono:style=Regular:size=22;4
+
+wm-restack = i3
+override-redirect = true
+
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+;cursor-scroll = ns-resize
+
+[bar/workspaces]
+inherit = bar/base
+module-margin = 0
+width = 300
+modules-left = i3 custom-workspace
+
+[bar/launcher]
+inherit = bar/base
+offset-x = 500
+width = 350
+radius = 10
+modules-center = arch-launcher firefox-launcher kitty-launcher code-launcher discord-launcher xournalpp-launcher htop-launcher tabletmode-launcher
+
+[bar/status]
+inherit = bar/base
+offset-x = 100%:-850
+width = 850
+modules-center =  filesystem cpu temperature memory wlan eth backlight pulseaudio battery date
+
+; -------------------------------------------------------------
+; Modules for workspaces bar
+; -------------------------------------------------------------
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+; focused = Active workspace on focused monitor
+label-focused = " %index% "
+; label-focused-background = ${colors.background}
+label-focused-foreground = ${colors.color1}
+label-focused-padding = 0
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = " %index% "
+;label-unfocused-background = ${colors.background}
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-padding = 0
+
+; visible = Active workspace on unfocused monitor
+label-visible = " %index% "
+label-visible-background = ${self.label-focused-background}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = " %index% "
+label-urgent-background = ${colors.color2}
+label-urgent-padding = 0
+
+[module/custom-workspace]
+type = custom/script
+exec = echo "                 "
+click-left = python3 ~/.config/polybar/add-workspace.py
+
+format = <label>
+label = %output%
+label-foreground = #777
+
+; -------------------------------------------------------------
+; Modules for launcher bar
+; -------------------------------------------------------------
+
+[module/launcher-base]
+type = custom/script
+format = <label>
+label =%{T3}%output%%{T-}
+
+[module/arch-launcher]
+inherit = module/launcher-base
+exec = echo ""
+click-left = rofi -show drun &
+
+[module/firefox-launcher]
+inherit = module/launcher-base
+exec = echo ""
+click-left = firefox &
+
+[module/kitty-launcher]
+inherit = module/launcher-base
+exec = echo ""
+click-left = kitty &
+
+[module/code-launcher]
+inherit = module/launcher-base
+exec = echo ""
+click-left = code &
+
+[module/discord-launcher]
+inherit = module/launcher-base
+exec = echo "ﭮ"
+click-left = discord &
+label =%{T4}%output%%{T-}
+
+[module/xournalpp-launcher]
+inherit = module/launcher-base
+exec = echo ""
+click-left = xournalpp &
+
+[module/htop-launcher]
+inherit = module/launcher-base
+exec = echo ""
+click-left = kitty zsh -c "cat ~/.config/wpg/sequences && htop"
+
+[module/tabletmode-launcher]
+inherit = module/launcher-base
+exec = /home/chasemcdonald/.config/custom-tabletmode/get-icon.zsh
+click-left = /home/chasemcdonald/.config/custom-tabletmode/toggle.zsh &
+interval = 1
+
+
+; -------------------------------------------------------------
+; Modules for status bar
+; -------------------------------------------------------------
+
+[module/filesystem]
+type = internal/fs
+interval = 60
+mount-0 = /
+
+;format-mounted-background = ${colors.background}
+format-mounted-foreground = ${colors.color1}
+label-mounted = %{T2}%{T-} %used%
+
+;format-unmounted-background = ${colors.background}
+format-unmounted-foreground = ${colors.color1}
+label-unmounted = %{T2}%{T-} %mountpoint% not mounted
+
+[module/cpu]
+type = internal/cpu
+interval = 5
+;format-background = ${colors.background}
+format-foreground = ${colors.color2}
+label ="%{T2}﬙%{T-} %percentage%%"
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+interval = 5
+
+;format-background = ${colors.background}
+format-foreground = ${colors.color3}
+format = <label>
+format-warn = <label-warn>
+
+label = " %temperature-c%"
+label-warn = " %temperature-c%"
+label-warn-background = ${colors.color1}
+
+[module/memory]
+type = internal/memory
+interval = 5
+format-foreground = ${colors.color4}
+label = %{T2}%{T-} %gb_used%
+
+[module/wlan]
+type = internal/network
+interface = wlo1
+interval = 5
+
+format-connected-foreground = ${colors.color5}
+format-connected = <label-connected>
+label-connected = %{T2}直%{T-} %essid%
+
+format-disconnected-foreground = #777
+format-disconnected = <label-disconnected>
+label-disconnected = %{T2}睊%{T-}
+
+[module/eth]
+type = internal/network
+interface = enp1s0f0
+interval = 5
+
+;format-connected-background = ${colors.background}
+format-connected-foreground = ${colors.color5}
+label-connected = %{T2}%{T-} %local_ip%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+
+[module/backlight]
+type = internal/backlight
+card = amdgpu_bl0
+
+format-foreground = ${colors.color6}
+label = "%{T2}%{T-} %percentage:2%%"
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_04_00.6.analog-stereo
+
+;format-volume-background = ${colors.background}
+format-volume-foreground = ${colors.color1}
+label-volume = %{T2}墳%{T-} %percentage%%
+
+;format-muted-background = ${colors.background}
+format-muted-foreground = #777
+label-muted = %{T2}婢%{T-} %percentage%%
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 99
+
+;format-charging-background = ${colors.background}
+format-charging-foreground = ${colors.color2}
+format-charging = <label-charging>
+format-charging-prefix = " "
+
+;format-discharging-background = ${colors.background}
+format-discharging-foreground = ${colors.color2}
+format-discharging = <ramp-capacity> <label-discharging>
+
+;format-full-background = ${colors.background}
+format-full-foreground = ${colors.color2}
+format-full = <label-full>
+format-full-prefix = " "
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+[module/date]
+type = internal/date
+interval = 3
+
+date = %b %d
+time = %l:%M
+
+;format-background = ${colors.background}
+format-foreground = ${colors.color3}
+label =  "%{T2}%{T-} %date% %time%"

@@ -1,3 +1,3 @@
-2021/06/03-09:13:15.997 1f01 Reusing MANIFEST /home/chasemcdonald/.config/Code - OSS/Local Storage/leveldb/MANIFEST-000001
-2021/06/03-09:13:16.002 1f01 Recovering log #3
-2021/06/03-09:13:16.002 1f01 Reusing old log /home/chasemcdonald/.config/Code - OSS/Local Storage/leveldb/000003.log 
+2021/06/07-16:44:45.913 1088 Reusing MANIFEST /home/chasemcdonald/.config/Code - OSS/Local Storage/leveldb/MANIFEST-000001
+2021/06/07-16:44:45.913 1088 Recovering log #3
+2021/06/07-16:44:45.913 1088 Reusing old log /home/chasemcdonald/.config/Code - OSS/Local Storage/leveldb/000003.log 
