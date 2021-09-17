@@ -1,0 +1,36 @@
+set completion-bg "#2b303b"
+set completion-fg "#c0c5ce"
+set completion-group-bg "#2b303b"
+set completion-group-fg "#a3be8c"
+set completion-highlight-bg "#a3be8c"
+set completion-highlight-fg "#2b303b"
+
+set default-bg "#2b303b"
+set default-fg "#c0c5ce"
+
+set font "CaskaydiaCove Nerd Font 11"
+
+set inputbar-bg "#2b303b"
+set inputbar-fg "#c0c5ce"
+set notification-bg "#a3be8c"
+set notification-fg "#2b303b"
+set notification-error-bg "#bf616a"
+set notification-error-fg "#2b303b"
+set notification-warning-bg "#8fa1b3"
+set notification-warning-fg "#2b303b"
+set statusbar-bg "#2b303b"
+set statusbar-fg "#c0c5ce"
+
+set recolor false
+set recolor-keephue true
+set recolor-darkcolor "#c0c5ce"
+set recolor-lightcolor "#2b303b"
+
+set render-loading-bg "#2b303b"
+set render-loading-fg "#c0c5ce"
+
+set link-hadjust false
+set search-hadjust false
+
+set window-title-home-tilde true
+set statusbar-home-tilde true

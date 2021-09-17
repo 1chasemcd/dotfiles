@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+    version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    preserveAspectRatio="xMidYMid meet" 
+    viewBox="0 0 20 4" 
+    width="400" 
+    height="80">
+
+    <!-- Left bar -->
+    <rect id="esc" height="20" width="30" y="0" x="0"/>
+    <rect id="brightness-down" height="20" width="15" y="20" x="0"/>
+    <rect id="brightness-up" height="20" width="15" y="20" x="15"/>
+    <rect id="volume-down" height="20" width="15" y="40" x="0"/>
+    <rect id="volume-up" height="20" width="15" y="40" x="15"/>
+    <rect id="hide" height="20" width="30" y="60" x="0"/>
+
+    <!-- Top row -->
+
+    <rect id="tick" height="20" width="20" y="0" x="30"/>
+    <rect id="q" height="20" width="20" y="0" x="50"/>
+    <rect id="w" height="20" width="20" y="0" x="70"/>
+    <rect id="e" height="20" width="20" y="0" x="90"/>
+    <rect id="r" height="20" width="20" y="0" x="110"/>
+    <rect id="t" height="20" width="20" y="0" x="130"/>
+    <rect id="y" height="20" width="20" y="0" x="150"/>
+    <rect id="u" height="20" width="20" y="0" x="170"/>
+    <rect id="i" height="20" width="20" y="0" x="190"/>
+    <rect id="o" height="20" width="20" y="0" x="210"/>
+    <rect id="p" height="20" width="20" y="0" x="230"/>
+    <rect id="left-brace" height="20" width="20" y="0" x="250"/>
+    <rect id="right-brace" height="20" width="20" y="0" x="270"/>
+    <rect id="backspace" height="20" width="30" y="0" x="290"/>
+
+    <!-- 2nd to top row -->
+    <rect id="tab" height="20" width="30" y="20" x="30"/>
+    <rect id="a" height="20" width="20" y="20" x="60"/>
+    <rect id="s" height="20" width="20" y="20" x="80"/>
+    <rect id="d" height="20" width="20" y="20" x="100"/>
+    <rect id="f" height="20" width="20" y="20" x="120"/>
+    <rect id="g" height="20" width="20" y="20" x="140"/>
+    <rect id="h" height="20" width="20" y="20" x="160"/>
+    <rect id="j" height="20" width="20" y="20" x="180"/>
+    <rect id="k" height="20" width="20" y="20" x="200"/>
+    <rect id="l" height="20" width="20" y="20" x="220"/>
+    <rect id="semicolon" height="20" width="20" y="20" x="240"/>
+    <rect id="quote" height="20" width="20" y="20" x="260"/>
+    <rect id="enter" height="20" width="40" y="20" x="280"/>
+
+    <!-- 2nd to bottom row -->
+    <rect id="lshift" height="20" width="40" y="40" x="30"/>
+    <rect id="z" height="20" width="20" y="40" x="70"/>
+    <rect id="x" height="20" width="20" y="40" x="90"/>
+    <rect id="c" height="20" width="20" y="40" x="110"/>
+    <rect id="v" height="20" width="20" y="40" x="130"/>
+    <rect id="b" height="20" width="20" y="40" x="150"/>
+    <rect id="n" height="20" width="20" y="40" x="170"/>
+    <rect id="m" height="20" width="20" y="40" x="190"/>
+    <rect id="comma" height="20" width="20" y="40" x="210"/>
+    <rect id="period" height="20" width="20" y="40" x="230"/>
+    <rect id="slash" height="20" width="20" y="40" x="250"/>
+    <rect id="back-slash" height="20" width="20" y="40" x="270"/>
+    <rect id="rshift" height="20" width="30" y="40" x="290"/>
+
+    <!-- Bottom row -->
+    <rect id="ctrl" height="20" width="23" y="60" x="30"/>
+    <rect id="mod" height="20" width="24" y="60" x="53"/>
+    <rect id="alt" height="20" width="23" y="60" x="77"/>
+    <rect id="space" height="20" width="140" y="60" x="100"/>
+    <rect id="left" height="20" width="20" y="60" x="240"/>
+    <rect id="down" height="20" width="20" y="60" x="260"/>
+    <rect id="up" height="20" width="20" y="60" x="280"/>
+    <rect id="right" height="20" width="20" y="60" x="300"/>
+
+
+    <!-- Numpad ============================================================== -->
+    <rect id="7" height="20" width="20" y="0" x="320"/>
+    <rect id="8" height="20" width="20" y="0" x="340"/>
+    <rect id="9" height="20" width="20" y="0" x="360"/>
+    <rect id="num-slash" height="20" width="20" y="0" x="380"/>
+
+    <rect id="4" height="20" width="20" y="20" x="320"/>
+    <rect id="5" height="20" width="20" y="20" x="340"/>
+    <rect id="6" height="20" width="20" y="20" x="360"/>
+    <rect id="astrick" height="20" width="20" y="20" x="380"/>
+
+    <rect id="1" height="20" width="20" y="40" x="320"/>
+    <rect id="2" height="20" width="20" y="40" x="340"/>
+    <rect id="3" height="20" width="20" y="40" x="360"/>
+    <rect id="minus" height="20" width="20" y="40" x="380"/>
+
+    <rect id="0" height="20" width="20" y="60" x="320"/>
+    <rect id="num-period" height="20" width="20" y="60" x="340"/>
+    <rect id="equal" height="20" width="20" y="60" x="360"/>
+    <rect id="plus" height="20" width="20" y="60" x="380"/>
+
+</svg>

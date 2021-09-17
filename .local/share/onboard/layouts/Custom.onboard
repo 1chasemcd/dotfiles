@@ -1,0 +1,105 @@
+<?xml version="1.0" ?> 
+<!-- 
+Copyright © 2013 Francesco Fumanti <francesco.fumanti@gmx.net> 
+Copyright © 2011-2014 marmuta <marmvta@gmail.com>This file is part of Onboard. 
+Onboard is free software; you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation; either version 3 of the License, or 
+(at your option) any later version. 
+Onboard is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+GNU General Public License for more details. 
+You should have received a copy of the GNU General Public License 
+along with this program. If not, see <http://www.gnu.org/licenses/>. 
+--> 
+<keyboard id="Custom" format="3.2" section="system" summary="Medium size desktop keyboard"> 
+    <box border="0"> 
+        <!--- keyboard, multiple layers --> 
+        <panel> 
+            <panel layer="alpha" filename="Custom.svg">
+                <key id="esc" keycode="9" label="esc"/>
+                <key id="brightness-down" label="漢" keycode="232"/>
+                <key id="brightness-up" label="瀞" keycode="233"/>
+                <key id="volume-down" label="ﱜ" keycode="122"/>
+                <key id="volume-up" label="ﱛ" keycode="123"/>
+                <key id="hide" button="true" label=""/>
+
+                <key id="tick" keycode="49"/>
+                <key id="q" keycode="24"/>
+                <key id="w" keycode="25"/>
+                <key id="e" keycode="26"/>
+                <key id="r" keycode="27"/>
+                <key id="t" keycode="28"/>
+                <key id="y" keycode="29"/>
+                <key id="u" keycode="30"/>
+                <key id="i" keycode="31"/>
+                <key id="o" keycode="32"/>
+                <key id="p" keycode="33"/>
+                <key id="left-brace" keycode="34"/>
+                <key id="right-brace" keycode="35"/>
+                <key id="backspace" keycode="22" label=""/>
+
+                <key id="tab" keycode="23" label="ﲒ" shift_label="ﲑ"/>
+                <key id="a" keycode="38"/>
+                <key id="s" keycode="39" />
+                <key id="d" keycode="40"/>
+                <key id="f" keycode="41"/>
+                <key id="g" keycode="42"/>
+                <key id="h" keycode="43"/>
+                <key id="j" keycode="44"/>
+                <key id="k" keycode="45"/>
+                <key id="l" keycode="46"/>
+                <key id="semicolon" keycode="47"/>
+                <key id="quote" keycode="48"/>
+                <key id="enter" keycode="36" label=""/>
+
+                <key id="lshift" modifier="shift" sticky="true" keycode="50" label="" shift_label=""/>
+
+                <key id="z" keycode="52"/>
+                <key id="x" keycode="53"/>
+                <key id="c" keycode="54"/>
+                <key id="v" keycode="55"/>
+                <key id="b" keycode="56"/>
+                <key id="n" keycode="57"/>
+                <key id="m" keycode="58"/>
+                <key id="comma" keycode="59"/>
+                <key id="period" keycode="60"/>
+                <key id="slash" keycode="61"/>
+                <key id="back-slash" keycode="51"/>
+                <key id="rshift" modifier="shift" sticky="true" keycode="50" label="" shift_label=""/>
+
+
+                <key id="ctrl" modifier="control" sticky="true" keycode="37" label="ctrl"/>
+                <key id="mod" modifier="mod4" sticky="true" keycode="133" label=""/>
+                <key id="alt" modifier="mod1" sticky="true" keycode="64" label="alt"/>
+                <key id="space" keycode="65" label=""/>
+                <key id="left" keycode="113" label=""/>
+                <key id="down" keycode="116" label=""/>
+                <key id="up" keycode="111" label=""/>
+                <key id="right" keycode="114" label=""/>
+
+                <key id="7" keycode="16"/>
+                <key id="8" keycode="17"/>
+                <key id="9" keycode="18"/>
+                <key id="num-slash" char="/" label="/"/>
+
+                <key id="4" keycode="13"/>
+                <key id="5" keycode="14"/>
+                <key id="6" keycode="15"/>
+                <key id="astrick" char="*" label="*"/>
+
+                <key id="1" keycode="10"/>
+                <key id="2" keycode="11"/>
+                <key id="3" keycode="12"/>
+                <key id="minus" keycode="20"/>
+
+                <key id="0" keycode="19"/>
+                <key id="num-period" char="." label="."/>
+                <key id="equal" char="=" label="="/>
+                <key id="plus" char="+" label="+"/>
+                
+            </panel> 
+        </panel> 
+    </box> 
+</keyboard> 
