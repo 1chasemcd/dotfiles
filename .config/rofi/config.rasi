@@ -1,0 +1,41 @@
+configuration {
+    modi: "window,run,ssh";
+    font: "CaskaydiaCove Nerd Font 11";
+    combi-modi: "window,drun,ssh";
+    display-drun: " ";
+}
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+window {
+    width: 20%;
+}
+
+scrollbar {
+    handle-color: @background;
+}
+
+#element {
+    border-radius: 10px;
+    padding: 2px 8px;
+}
+
+#element.normal.urgent {
+    text-color: @background;
+}
+
+#element.normal.active {
+    text-color: @background;
+}
+
+#element.selected.normal {
+    text-color: @background;
+}
+
+#element.selected.urgent {
+    text-color: @background;
+}
+
+#element.selected.active {
+    text-color: @background;
+}

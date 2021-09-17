@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<color_scheme name="Custom" format="2.0">
+    <layer> <color element="background" rgb="{background}" opacity="1.0"/> </layer>
+
+    <key_group>
+        <color element="fill"   rgb="#ffffff" opacity="0.05"/>
+        <color element="stroke" rgb="#000000" opacity="0.5"/>
+        <color element="label"  rgb="{foreground}"/>
+        
+        <color element="fill"   pressed="true" rgb="#ffffff" opacity="0.15" />
+        <color element="fill"   active="true" rgb="#ffffff" opacity="0.15" />
+        <color element="fill"   locked="true" rgb="{color1}" opacity="1"/>
+        
+        <key_group>
+            <color element="fill"   rgb="#000000" opacity="0.0"/>
+            <color element="fill"   pressed="true" rgb="#ffffff" opacity="0.15" />
+            <color element="fill"   active="true" rgb="#ffffff" opacity="0.15" />
+            
+            esc, brightness-down, brightness-up, volume-down, volume-up, hide,
+            tick, backspace, 7, 8, 9, num-slash,
+            tab, enter, 4, 5, 6, astrick,
+            lshift, rshift, 1, 2, 3, minus,
+            ctrl, mod, alt, left, down, up, right, 0, num-period, equal, plus
+
+        </key_group>
+    </key_group>
+</color_scheme>
+

@@ -1,0 +1,36 @@
+set completion-bg "{background}"
+set completion-fg "{foreground}"
+set completion-group-bg "{background}"
+set completion-group-fg "{color2}"
+set completion-highlight-bg "{color2}"
+set completion-highlight-fg "{background}"
+
+set default-bg "{background}"
+set default-fg "{foreground}"
+
+set font "CaskaydiaCove Nerd Font 11"
+
+set inputbar-bg "{background}"
+set inputbar-fg "{foreground}"
+set notification-bg "{color2}"
+set notification-fg "{background}"
+set notification-error-bg "{color1}"
+set notification-error-fg "{background}"
+set notification-warning-bg "{color4}"
+set notification-warning-fg "{background}"
+set statusbar-bg "{background}"
+set statusbar-fg "{foreground}"
+
+set recolor false
+set recolor-keephue true
+set recolor-darkcolor "{foreground}"
+set recolor-lightcolor "{background}"
+
+set render-loading-bg "{background}"
+set render-loading-fg "{foreground}"
+
+set link-hadjust false
+set search-hadjust false
+
+set window-title-home-tilde true
+set statusbar-home-tilde true
