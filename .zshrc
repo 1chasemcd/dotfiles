@@ -13,7 +13,6 @@ fi
 
 # Some environment variables
 export EDITOR=micro
-export BAT_THEME=base16
 
 # Make zsh set terminal title. Useful for awesome to detect which processes are running in
 # which window
@@ -35,9 +34,9 @@ if [[ "$TERM" == (Eterm*|alacritty*|aterm*|gnome*|konsole*|kterm*|putty*|rxvt*|s
 fi
 
 # Histfile
-HISTFILE=~/.config/zsh/histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTFILE=~/.zsh_history
+HISTSIZE=5000
+SAVEHIST=5000
 setopt INC_APPEND_HISTORY_TIME
 
 bindkey -e
@@ -129,5 +128,5 @@ alias rm="gio trash"
 
 # Alias for exa (prettier ls)
 alias ls="exa --icons"
-
+alias la="exa --icons -a"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"

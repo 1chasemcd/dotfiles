@@ -3,9 +3,9 @@ local awful = require("awful")
 return {
     modkey = "Mod4",
 
-    terminal = "kitty",
-    terminal_run_command = function(command) return "kitty --title='"..command.."' zsh -c 'cat ~/.cache/wal/sequences ; "..command.."'" end,
-    editor = "micro",
+    terminal = "alacritty",
+    terminal_run_command = function(command) return "alacritty --title='"..command.."' -e zsh -c 'cat ~/.cache/wal/sequences ; "..command.."'" end,
+    editor = "vim",
     browser = "firefox",
 
     home_dir = "/home/chasemcdonald/",
