@@ -1,0 +1,61 @@
+@import "/home/chasemcdonald/.cache/wal/colors.css";
+
+* {
+    font-family: "CaskaydiaCove Nerd Font" !important;
+    color: var(--foreground);
+}
+
+body {
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#clock {
+    text-align: center;
+    font-size: 4rem;
+    background-color: #fff1;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 16px;
+}
+
+#launcher-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.launcher-separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff1;
+    border-radius: 16px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 160px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+b {
+    color: var(--color1);
+}
+
+a:hover, a:focus {
+    color: var(--color1);
+    font-weight: bold;
+}

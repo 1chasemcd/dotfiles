@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <style>
+        @import "/home/chasemcdonald/.cache/wal/colors.css";
+
+        * {
+            font-family: "CaskaydiaCove Nerd Font" !important;
+            color: var(--foreground);
+        }
+
+        body {
+            background-color: var(--background);
+            overflow: hidden;
+        }
+
+        #container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #clock {
+            text-align: center;
+            font-size: 4rem;
+            background-color: #fff1;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 16px;
+        }
+
+        #launcher-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .launcher-separator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff1;
+            border-radius: 16px;
+            padding: 1rem;
+            margin: 1rem;
+            width: 160px;
+        }
+
+        a {
+            text-decoration: none;
+            outline: none;
+            font-size: 1.25rem;
+        }
+
+        b {
+            color: var(--color1);
+        }
+
+        a:hover, a:focus {
+            color: var(--color1);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1 id="clock"></h1>
+
+            <div id="launcher-container">
+                <div class="launcher-separator">
+                    <a href="https://drive.google.com">drive</a>
+                    <a href="https://docs.google.com">docs</a>
+                    <a href="https://docs.google.com/spreadsheets">sheets</a>
+                </div>
+                
+                <div class="launcher-separator">
+                    <a href="https://trailhead.mines.edu">trailhead</a>
+                    <a href="https://elearning.mines.edu/login/saml">canvas</a>
+                    <a href="https://ticktick.com/webapp">ticktick</a>
+                </div>
+
+                <div class="launcher-separator">
+                    <a href="https://reader.yuzu.com/#/">NHV Textbook</a>
+                    <a href="https://cs-courses.mines.edu/csci262/fall2021/#/">csci 262</a>
+                    <a href="https://piazza.com/">piazza</a>
+                </div>
+
+                <div class="launcher-separator">
+                    <a href="https://outlook.office.com/mail/inbox">outlook</a>
+                    <a href="https://mail.google.com">gmail</a>
+                    <a href="https://web.groupme.com/chats">groupme</a>
+                </div>
+
+                <div class="launcher-separator">
+                    <a href="https://stackoverflow.com">stackoverflow</a>
+                    <a href="https://reddit.com">reddit</a>
+                    <a href="https://github.com">github</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let colon = ""
+
+        function setTime() {
+            let date = new Date();
+            let hour = date.getHours();
+            hour = hour % 12;
+
+            let min = date.getMinutes();
+            min = String(min);
+
+            if (min.length == 1) {
+                min = "0" + min;
+            }
+
+            if (colon == ":") {
+                colon = " ";
+            } else {
+                colon = ":";
+            }
+
+            document.getElementById("clock").innerHTML = hour + colon + min;
+        }
+
+        setInterval(setTime, 1000);
+
+        setTime();
+
+        let shortcuts = {}
+
+        for (let separator of document.getElementById("launcher-container").children) {
+            for (let a of separator.children) {
+
+                text = a.innerHTML
+
+                for (let index in text) {
+                    if (!shortcuts.hasOwnProperty(text[index]) && text[index] != " ") {
+                        shortcuts[text[index]] = a.href;
+                        text = text.substring(0, index) + "<b>" + text[index] + "</b>" + text.substring(parseInt(index) + 1);
+                        a.innerHTML = text;
+                        break;
+                    }
+                }
+            }
+        }
+
+        document.addEventListener("keydown", function(e) {
+            for (let shortcut in shortcuts) {
+                if (e.key == shortcut) {
+                    window.open(shortcuts[shortcut], "_self")
+                }
+            }
+        })
+    </script>
+</body>
+</html>
